@@ -7,9 +7,9 @@ const Home = () => {
 
   return (
     <Container>
-      <Shape1></Shape1>
-      <Shape2></Shape2>
-      <Shape3></Shape3>
+      <Shape1 />
+      <Shape2 />
+      <Shape3 />
 
       <Content>
         <Card

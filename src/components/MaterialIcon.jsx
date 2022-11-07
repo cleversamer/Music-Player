@@ -10,6 +10,15 @@ const MaterialIcon = ({ id = "", name = "" }) => {
 
 const Container = styled.i`
   cursor: pointer;
+  transition-duration: 176ms;
+
+  :hover {
+    transform: scale(1.05);
+  }
+
+  :active {
+    transform: scale(0.97);
+  }
 `;
 
 export default MaterialIcon;

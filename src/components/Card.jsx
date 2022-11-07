@@ -128,7 +128,7 @@ const Controls = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 
   #prev,
   #next {
@@ -167,15 +167,15 @@ const Play = styled.div`
 const Volume = styled.div`
   width: 100%;
   height: 50px;
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.4);
   position: absolute;
   bottom: ${({ show }) => (show ? "0" : "-10%")};
   left: 0;
   border-radius: 10px;
-  border: 1px solid #555;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
   padding: 25px;
   z-index: 5;
   transition: bottom 0.2s linear;
