@@ -1,9 +1,17 @@
 import { useState } from "react";
 import styled from "styled-components";
 import Card from "components/Card";
+import List from "components/List";
 
 const Home = () => {
   const [musicNum, setMusicNum] = useState(0);
+  const [open, setOpen] = useState(false);
+
+  const handleMusicChange = (musicNum = 0) => setMusicNum(musicNum);
+
+  const handleOpen = () => setOpen(true);
+
+  const handleClose = () => setOpen(false);
 
   return (
     <Container>
@@ -12,9 +20,14 @@ const Home = () => {
       <Shape3 />
 
       <Content>
-        <Card
+        <Card musicNum={musicNum} onMusicChange={handleMusicChange} />
+
+        <List
+          open
           musicNum={musicNum}
-          onMusicNumChange={(musicNum) => setMusicNum(musicNum)}
+          onMusicChange={handleMusicChange}
+          onOpen={handleOpen}
+          onClose={handleClose}
         />
       </Content>
     </Container>

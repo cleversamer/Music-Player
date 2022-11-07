@@ -2,7 +2,7 @@ import styled from "styled-components";
 import MaterialIcon from "./MaterialIcon";
 import musics from "musics";
 
-const Card = ({ musicNum, onMusicNumChange }) => {
+const Card = ({ musicNum, onMusicChange }) => {
   const currentMusic = musics[musicNum];
 
   return (
