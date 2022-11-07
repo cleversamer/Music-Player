@@ -1,6 +1,6 @@
 export const ROUTES = {
   CLIENT: {
-    HOME: "/home",
+    HOME: "/app",
     NOT_FOUND: "/not-found",
   },
 };

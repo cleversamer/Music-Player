@@ -6,7 +6,7 @@ const NotFound = () => {
   return (
     <Container className="notfound-container">
       <Heading className="heading">
-        The requested URL was not found on this server.
+        The requested URL was not found on this server
       </Heading>
 
       <Link to={ROUTES.CLIENT.HOME} className="link">
@@ -30,6 +30,9 @@ const Container = styled.div`
     font-size: 2vw !important;
     font-weight: 500;
     color: #1e90ff;
+    background-color: #eee;
+    padding: 20px 40px;
+    border-radius: 50px;
 
     :hover {
       text-decoration: underline !important;
