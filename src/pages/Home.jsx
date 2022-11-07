@@ -19,6 +19,13 @@ const Home = () => {
 
 const Container = styled.div``;
 
-const Content = styled.main``;
+const Content = styled.main`
+  width: 360px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(7, 15, 15, 0.5);
+  overflow: hidden;
+  backdrop-filter: blur(3px);
+`;
 
 export default Home;

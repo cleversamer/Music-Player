@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
-const MaterialIcon = ({ name }) => {
-  return <Container className="material-icons">{name}</Container>;
+const MaterialIcon = ({ id = "", name = "" }) => {
+  return (
+    <Container id={id} className="material-icons">
+      {name}
+    </Container>
+  );
 };
 
 const Container = styled.i`
