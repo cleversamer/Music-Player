@@ -20,11 +20,6 @@ body {
   align-items: center;
 }
 
-i {
-  cursor: pointer;
-  user-select: none;
-}
-
 ul {
   list-style: none;
 }

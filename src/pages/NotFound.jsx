@@ -30,11 +30,9 @@ const Container = styled.div`
     font-size: 2vw !important;
     font-weight: 500;
     color: #1e90ff;
-    text-decoration: underline !important;
 
-    :hover,
-    :active {
-      color: #303030;
+    :hover {
+      text-decoration: underline !important;
     }
 
     @media screen and (max-width: 768px) {
@@ -47,6 +45,7 @@ const Heading = styled.h1`
   font-size: 3.33vw;
   padding: 0 4vw;
   text-align: center;
+  color: #eee;
 
   @media screen and (max-width: 768px) {
     font-size: 6vw !important;
